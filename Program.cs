@@ -19,12 +19,12 @@ namespace CraSH
 			VFSGlobal.Manager = vfsManager;
 
 			var pty = new ConsolePty();
-			var shellApp = new StarChart.AppFramework.ShellApp(pty, vfsManager);
+			var crashApp = new CraSHTerminalApp(pty, vfsManager);
 
 			var ctx = new StarChart.Plugins.PluginContext { VFS = vfsManager, Arguments = args, WorkingDirectory = "/", PrimaryPty = pty };
 
 			// Run using AppHost (will return when the shell exits)
-			AppHost.Run(shellApp, ctx);
+			StarChart.AppFramework.AppHost.Run(crashApp, ctx);
 
 			// exit process when shell returns
 			return;
