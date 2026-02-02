@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StarChart.csproj" />
-    <ProjectReference Include="..\..\Adamantite\Adamantite.CSharp\Adamantite.csproj" />
+    <ProjectReference Include="..\..\..\StarChart\StarChart.csproj" />
+    <ProjectReference Include="..\..\..\Adamantite\Adamantite.CSharp\Adamantite.csproj" />
   </ItemGroup>
 
 </Project>
